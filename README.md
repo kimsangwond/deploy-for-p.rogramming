@@ -1,6 +1,6 @@
 # 장고 배포하기 실습
 
-![서버 동작 과정](Untitled-beb98657-addf-43e0-a864-3800c887bbe8.png)
+![서버 동작 과정](imgs/web-server-process.png)
 
 서버 동작 과정
 
@@ -101,15 +101,17 @@
                 vacuum = true
                 
                 env = DJANGO_SETTINGS_MODULE=%(project).settings.prod
+                ```
             ```
                 
                 
+            ```
             
         2. **uWSGI에 대한 서비스 스크립트 생성**
             - [Systemd](https://uwsgi-docs.readthedocs.io/en/latest/Systemd.html)
             
         - [Systemd options](https://www.freedesktop.org/software/systemd/man/systemd.service.html)
-            
+          
                 ```shell
                 $ sudo vi /etc/systemd/system/uwsgi.service
                 
