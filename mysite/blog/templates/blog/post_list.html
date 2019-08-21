@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" />
+<style>
+    body {
+        padding-top: 60px;
+    }
+    .navbar-inverse{
+        background-color: #72ff58;
+        border-color: #72ff58;
+    }
+    .navbar-inverse .navbar-brand {
+        color: #ffffff;
+    }
+
+    .btn-primary {
+        color: #ffffff;
+        background-color: #72ff58;
+        border-color: #72ff58;
+    }
+</style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">P.rogramming Blog</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td>제목</td>
+                            <td>내용</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for post in post_list %}
+                            <tr>
+                                <td>{{ post.title }}</td>
+                                <td>{{ post.content }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <hr/>
+                    <a href="{% url "blog:post_new" %}" class="btn btn-primary">새 글 쓰기</a>
+                <hr/>
+
+                &copy; gustos
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
