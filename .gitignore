@@ -1,0 +1,30 @@
+### OSX ###
+.DS_Store
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+venv/
+media/
+*.egg-info/
+.installed.cfg
+*.egg
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+
+### Pycharm ###
+.idea/
+
+.env
+db.sqlite3
+
