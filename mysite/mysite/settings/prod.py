@@ -1,0 +1,9 @@
+from mysite.settings.common import *
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
+
+ALLOWED_HOSTS = ['15.164.126.227', ]
+
+# Database
+# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
