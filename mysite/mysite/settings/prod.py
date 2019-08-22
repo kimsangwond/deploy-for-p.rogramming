@@ -2,7 +2,7 @@ from mysite.settings.common import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['3.18.114.85']
+ALLOWED_HOSTS = ['52.78.203.155	']
 
 
 DATABASES = {
